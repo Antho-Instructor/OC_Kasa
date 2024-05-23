@@ -1,0 +1,26 @@
+@include respond-to("tablet") {
+	.navbar {
+		@include flex-center;
+	}
+
+	.navbar__ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+		li {
+			list-style: none;
+			margin: 0 0.5rem;
+			text-transform: uppercase;
+			font-size: 12px;
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+		}
+	}
+
+	.active {
+		text-decoration: underline 1px solid !important;
+		text-underline-offset: 2px;
+	}
+}

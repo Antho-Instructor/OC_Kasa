@@ -1,0 +1,18 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin responsive-img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+@mixin respond-to($breakpoint) {
+	$breakpoint-value: map-get($breakpoints, $breakpoint);
+	@media (max-width: $breakpoint-value) {
+		@content;
+	}
+}

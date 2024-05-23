@@ -1,0 +1,19 @@
+// Import font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+// Import de la feuille de reset
+@import "base/reset";
+
+// Import des helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// Import du style des pages
+@import "pages/layout";
+
+// Import des composants
+@import "components/navbar";
