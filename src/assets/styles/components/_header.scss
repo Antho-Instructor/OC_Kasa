@@ -1,0 +1,28 @@
+.header {
+	position: relative;
+	color: white;
+	display: flex;
+	align-items: center;
+	@include background-img-header($img-falaise);
+	border-radius: $border-radius;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 2rem 0 2rem 1rem;
+	margin: 2rem 0;
+
+	p {
+		line-height: 1.4;
+	}
+}
+
+@include respond-to("tablet") {
+	.header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		br {
+			display: none;
+		}
+		font-size: 2rem;
+	}
+}

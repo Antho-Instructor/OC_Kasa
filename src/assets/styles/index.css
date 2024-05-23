@@ -315,13 +315,12 @@ template {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-    margin: 1.2rem auto;
-  }
+.container {
+  width: 90%;
+  margin: 1.4rem auto;
 }
-@media (max-width: 768px) {
+
+@media (min-width: 325px) {
   .navbar {
     display: flex;
     justify-content: center;
@@ -346,5 +345,43 @@ template {
     -webkit-text-decoration: underline 1px solid !important;
             text-decoration: underline 1px solid !important;
     text-underline-offset: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header {
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/falaise.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem 0 2rem 1rem;
+  margin: 2rem 0;
+}
+.header p {
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .header br {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

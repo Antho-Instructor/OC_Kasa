@@ -1,4 +1,4 @@
-@include respond-to("tablet") {
+@include respond-to("mobile") {
 	.navbar {
 		@include flex-center;
 	}
@@ -22,5 +22,11 @@
 	.active {
 		text-decoration: underline 1px solid !important;
 		text-underline-offset: 2px;
+	}
+}
+
+@include respond-to("tablet") {
+	.navbar {
+		@include flex-between;
 	}
 }

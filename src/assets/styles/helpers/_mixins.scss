@@ -4,15 +4,30 @@
 	align-items: center;
 }
 
-@mixin responsive-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+@mixin flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin background-img-header(
+	$image,
+	$height: 5rem,
+	$size: cover,
+	$position: center,
+	$repeat: no-repeat
+) {
+	height: $height;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url($image);
+	background-size: $size;
+	background-position: $position;
+	background-repeat: $repeat;
 }
 
 @mixin respond-to($breakpoint) {
 	$breakpoint-value: map-get($breakpoints, $breakpoint);
-	@media (max-width: $breakpoint-value) {
+	@media (min-width: $breakpoint-value) {
 		@content;
 	}
 }
