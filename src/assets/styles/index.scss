@@ -14,7 +14,9 @@ body {
 
 // Import du style des pages
 @import "pages/layout";
+@import "pages/cardslist";
 
 // Import des composants
 @import "components/navbar";
 @import "components/header";
+@import "components/card";

@@ -1,0 +1,14 @@
+.cards__list {
+	display: grid;
+	gap: 2rem;
+}
+
+@include respond-to("tablet") {
+	.cards__list {
+		grid-template-columns: repeat(3, 1fr);
+		background-color: $secondary-color;
+		padding: 3rem;
+		border-radius: 25px;
+		gap: 3rem;
+	}
+}
