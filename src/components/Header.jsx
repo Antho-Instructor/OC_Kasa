@@ -1,8 +1,12 @@
-function Header() {
+function Header({ homepage, page }) {
 	return (
-		<header className="header">
+		<header className={page === "about" ? "header__about" : "header"}>
 			<p>
-				Chez vous, <br /> partout et ailleurs
+				{homepage && (
+					<p>
+						Chez vous, <br /> partout et ailleurs
+					</p>
+				)}
 			</p>
 		</header>
 	);

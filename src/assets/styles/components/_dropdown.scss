@@ -1,0 +1,32 @@
+details {
+	background-color: $secondary-color;
+	margin: 1rem 0;
+
+	summary {
+		cursor: pointer;
+		background-color: $primary-color;
+		color: $secondary-color;
+		padding: 0.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 5px;
+
+		.emoji {
+			width: 20px;
+			height: 20px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin-left: 0.5rem;
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+
+	p {
+		padding: 0.5rem;
+	}
+
+	&[open] summary .emoji {
+		transform: rotate(-180deg);
+	}
+}

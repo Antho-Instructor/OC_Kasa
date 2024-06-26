@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 function Navbar() {
@@ -6,12 +7,24 @@ function Navbar() {
 			<img src={logo} alt="logo kasa" className="navbar__logo" />
 			<ul className="navbar__ul">
 				<li>
-					<a href="#" className="active">
+					<NavLink
+						to="/"
+						className={({ isActive, isPending }) =>
+							isPending ? "pending" : isActive ? "active" : ""
+						}
+					>
 						Accueil
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a href="#">A propos</a>
+					<NavLink
+						to="/about"
+						className={({ isActive, isPending }) =>
+							isPending ? "pending" : isActive ? "active" : ""
+						}
+					>
+						A propos
+					</NavLink>
 				</li>
 			</ul>
 		</nav>

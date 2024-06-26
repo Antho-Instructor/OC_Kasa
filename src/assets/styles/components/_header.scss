@@ -14,6 +14,11 @@
 	p {
 		line-height: 1.4;
 	}
+
+	&__about {
+		@extend .header;
+		@include background-img-header($img-foret);
+	}
 }
 
 @include respond-to("tablet") {

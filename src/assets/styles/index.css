@@ -408,7 +408,7 @@ template {
     align-items: center;
   }
 }
-.header {
+.header, .header__about {
   position: relative;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
   color: white;
@@ -425,18 +425,25 @@ template {
   padding: 2rem 0 2rem 1rem;
   margin: 2rem 0;
 }
-.header p {
+.header p, .header__about p {
   line-height: 1.4;
+}
+.header__about {
+  height: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/foret.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
-  .header {
+  .header, .header__about {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
   }
-  .header br {
+  .header br, .header__about br {
     display: none;
   }
 }
@@ -482,4 +489,32 @@ template {
   .footer br {
     display: none;
   }
+}
+details {
+  background-color: #f6f6f6;
+  margin: 1rem 0;
+}
+details summary {
+  cursor: pointer;
+  background-color: #ff6060;
+  color: #f6f6f6;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+details summary .emoji {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+details p {
+  padding: 0.5rem;
+}
+details[open] summary .emoji {
+  transform: rotate(-180deg);
 }/*# sourceMappingURL=index.css.map */

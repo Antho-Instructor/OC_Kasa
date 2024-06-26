@@ -7,6 +7,7 @@ import Layout from "./pages/Layout/Layout.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 import "./assets/styles/index.css";
+import About from "./pages/About.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <App />,
+			},
+			{
+				path: "/about",
+				element: <About />,
 			},
 			{
 				path: "*",

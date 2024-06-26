@@ -4,7 +4,7 @@ import CardsList from "./CardsList";
 function App() {
 	return (
 		<div>
-			<Header />
+			<Header homepage />
 			<CardsList />
 		</div>
 	);
