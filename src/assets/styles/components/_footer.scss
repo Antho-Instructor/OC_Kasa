@@ -1,0 +1,25 @@
+.footer {
+	@include flex-center();
+	flex-direction: column;
+	padding: 3rem;
+	background-color: black;
+	color: $secondary-color;
+	font-size: 0.8rem;
+
+	img {
+		padding-bottom: 1rem;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+@include respond-to("tablet") {
+	.footer {
+		br {
+			display: none;
+		}
+		font-size: 1.2rem;
+	}
+}
