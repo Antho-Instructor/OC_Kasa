@@ -1,10 +1,17 @@
+import { Link, useLoaderData } from "react-router-dom";
 import Card from "../components/Card";
 
 function CardsList() {
+	const { datas } = useLoaderData();
+
 	return (
 		<section className="cards__list">
-			{[1, 2, 3, 4, 5].map((card, index) => {
-				return <Card key={index} />;
+			{datas.map((card) => {
+				return (
+					<Link key={card.id} to={`/${card.id}`}>
+						<Card card={card} />
+					</Link>
+				);
 			})}
 		</section>
 	);

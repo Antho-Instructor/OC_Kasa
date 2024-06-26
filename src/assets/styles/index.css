@@ -327,6 +327,13 @@ template {
   display: grid;
   gap: 2rem;
 }
+.cards__list a {
+  text-decoration: none;
+}
+.cards__list a:hover {
+  -webkit-text-decoration: underline solid #ff6060;
+          text-decoration: underline solid #ff6060;
+}
 
 @media (min-width: 768px) {
   .cards__list {
@@ -434,6 +441,7 @@ template {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 15rem;
 }
 
 @media (min-width: 768px) {
@@ -449,10 +457,11 @@ template {
 }
 .card {
   background-color: #ff6060;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
   width: 100%;
   height: 300px;
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: flex-end;
   color: white;
@@ -517,4 +526,14 @@ details p {
 }
 details[open] summary .emoji {
   transform: rotate(-180deg);
+}
+
+@media (min-width: 768px) {
+  details {
+    max-width: 80%;
+    margin: 1rem auto;
+  }
+  details summary {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=index.css.map */

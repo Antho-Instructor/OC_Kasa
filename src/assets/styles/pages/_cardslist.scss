@@ -1,6 +1,14 @@
 .cards__list {
 	display: grid;
 	gap: 2rem;
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline solid $primary-color;
+	}
 }
 
 @include respond-to("tablet") {

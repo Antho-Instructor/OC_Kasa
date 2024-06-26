@@ -5,9 +5,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./pages/App.jsx";
 import Layout from "./pages/Layout/Layout.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import Details from "./pages/Details.jsx";
+import About from "./pages/About.jsx";
+
+import datas from "./data/datas.json";
 
 import "./assets/styles/index.css";
-import About from "./pages/About.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +20,19 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <App />,
+				loader: async () => {
+					return {
+						datas,
+					};
+				},
+			},
+			{
+				path: "/:id",
+				element: <Details />,
+				loader: async ({ params }) => {
+					const data = datas.find((card) => card.id === params.id);
+					return data;
+				},
 			},
 			{
 				path: "/about",

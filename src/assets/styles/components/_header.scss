@@ -18,6 +18,7 @@
 	&__about {
 		@extend .header;
 		@include background-img-header($img-foret);
+		height: 15rem;
 	}
 }
 

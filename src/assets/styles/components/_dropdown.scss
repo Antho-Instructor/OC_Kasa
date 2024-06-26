@@ -30,3 +30,13 @@ details {
 		transform: rotate(-180deg);
 	}
 }
+
+@include respond-to("tablet") {
+	details {
+		max-width: 80%;
+		margin: 1rem auto;
+		summary {
+			font-size: 1.2rem;
+		}
+	}
+}
