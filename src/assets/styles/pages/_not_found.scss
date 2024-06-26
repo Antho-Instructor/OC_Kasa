@@ -1,0 +1,43 @@
+.not_found {
+	@include flex-center();
+	flex-direction: column;
+	color: $primary-color;
+
+	margin-top: auto;
+
+	h1 {
+		font-size: 6rem;
+		margin: 4rem 0;
+	}
+
+	h2 {
+		text-align: center;
+		font-weight: 400;
+		font-size: 1rem;
+		margin: 2rem 0;
+	}
+
+	a {
+		margin-top: 5rem;
+		color: black;
+	}
+}
+
+@include respond-to("tablet") {
+	.not_found {
+		br {
+			display: none;
+		}
+		h1 {
+			font-size: 15rem;
+		}
+
+		h2 {
+			font-size: 1.75rem;
+		}
+
+		a {
+			margin: 4rem;
+		}
+	}
+}

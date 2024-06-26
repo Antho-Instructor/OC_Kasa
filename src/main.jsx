@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./pages/App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import App from "./pages/App.jsx";
 import Layout from "./pages/Layout/Layout.jsx";
+import NotFound from "./pages/NotFound.jsx";
+
 import "./assets/styles/index.css";
 
 const router = createBrowserRouter([
@@ -14,6 +16,10 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <App />,
+			},
+			{
+				path: "*",
+				element: <NotFound />,
 			},
 		],
 	},
