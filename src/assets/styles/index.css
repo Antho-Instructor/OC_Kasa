@@ -461,6 +461,10 @@ template {
   margin-right: 1rem;
   padding-left: 0.5rem;
 }
+.details .desc__dropdown {
+  display: flex;
+  justify-content: space-between;
+}
 
 @media (min-width: 768px) {
   .carousel button {
@@ -648,11 +652,11 @@ details .equipments li {
 }
 
 @media (min-width: 768px) {
-  details {
+  .about {
     max-width: 80%;
     margin: 1rem auto;
   }
-  details summary {
+  .about summary {
     font-size: 1.2rem;
   }
 }

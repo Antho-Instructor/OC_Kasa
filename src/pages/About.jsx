@@ -27,7 +27,7 @@ function About() {
 	return (
 		<>
 			<Header page="about" />
-			<section>
+			<section className="about">
 				{dropdownData.map((item, index) => (
 					<Dropdown key={index} title={item.title}>
 						{item.content}

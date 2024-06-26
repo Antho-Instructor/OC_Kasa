@@ -67,7 +67,7 @@ function Details() {
 						/>
 					</div>
 				</div>
-				<div>
+				<div className="desc__dropdown">
 					<Dropdown title="Description">{data.description}</Dropdown>
 					<Dropdown
 						title="Équipement"

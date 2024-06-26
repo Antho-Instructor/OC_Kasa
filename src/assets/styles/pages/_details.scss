@@ -93,6 +93,11 @@
 			}
 		}
 	}
+
+	.desc__dropdown {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 @include respond-to("tablet") {

@@ -42,7 +42,7 @@ details {
 }
 
 @include respond-to("tablet") {
-	details {
+	.about {
 		max-width: 80%;
 		margin: 1rem auto;
 		summary {
