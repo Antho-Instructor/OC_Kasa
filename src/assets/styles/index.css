@@ -381,6 +381,117 @@ template {
     margin: 4rem;
   }
 }
+.details .carousel {
+  position: relative;
+}
+.details .carousel > img {
+  margin-top: 3rem;
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.details .carousel span {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  padding: 1rem;
+  color: white;
+}
+.details .carousel button {
+  position: absolute;
+  top: calc(50% + 25px);
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.details .carousel button img {
+  height: 50px;
+  width: 50px;
+}
+.details .carousel span {
+  display: none;
+}
+.details .carousel button[aria-label="Previous image"] {
+  left: 0px;
+}
+.details .carousel button[aria-label="Previous image"] img {
+  transform: rotate(-90deg);
+}
+.details .carousel button[aria-label="Next image"] {
+  right: 0px;
+}
+.details .carousel button[aria-label="Next image"] img {
+  transform: rotate(90deg);
+}
+.details .desc__location {
+  font-weight: 500;
+}
+.details .desc__location :nth-child(1) {
+  color: #ff6060;
+  font-size: 1.5rem;
+}
+.details .desc__location :nth-child(2) {
+  font-size: 1.25rem;
+}
+.details .desc__tags ul {
+  padding: 0;
+}
+.details .desc__host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.details .desc__host_info {
+  display: flex;
+  align-items: center;
+}
+.details .desc__host_info span {
+  color: #ff6060;
+  font-weight: 500;
+}
+.details .desc__host_info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .carousel button {
+    position: absolute;
+    top: calc(50% + 25px);
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  .carousel button img {
+    height: 100px;
+    width: 100px;
+  }
+  .carousel span {
+    display: block;
+  }
+  .carousel button[aria-label="Previous image"] {
+    left: 0px;
+  }
+  .carousel button[aria-label="Previous image"] img {
+    transform: rotate(-90deg);
+  }
+  .carousel button[aria-label="Next image"] {
+    right: 0px;
+  }
+  .carousel button[aria-label="Next image"] img {
+    transform: rotate(90deg);
+  }
+}
 @media (min-width: 325px) {
   .navbar {
     display: flex;
@@ -505,6 +616,7 @@ details {
 }
 details summary {
   cursor: pointer;
+  font-weight: 700;
   background-color: #ff6060;
   color: #f6f6f6;
   padding: 0.5rem;
@@ -522,10 +634,17 @@ details summary .emoji {
   transition: transform 0.3s ease-in-out;
 }
 details p {
-  padding: 0.5rem;
+  padding: 1.5rem 1rem;
 }
 details[open] summary .emoji {
   transform: rotate(-180deg);
+}
+details .equipments {
+  list-style: none;
+  padding: 1.1rem 1rem;
+}
+details .equipments li {
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -536,4 +655,18 @@ details[open] summary .emoji {
   details summary {
     font-size: 1.2rem;
   }
+}
+.tags {
+  padding: 0.2rem 1.2rem;
+  background-color: #ff6060;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  color: #f6f6f6;
+  font-weight: 700;
+}
+
+.star {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=index.css.map */

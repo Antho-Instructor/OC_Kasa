@@ -4,6 +4,7 @@ details {
 
 	summary {
 		cursor: pointer;
+		font-weight: 700;
 		background-color: $primary-color;
 		color: $secondary-color;
 		padding: 0.5rem;
@@ -23,11 +24,20 @@ details {
 	}
 
 	p {
-		padding: 0.5rem;
+		padding: 1.5rem 1rem;
 	}
 
 	&[open] summary .emoji {
 		transform: rotate(-180deg);
+	}
+
+	.equipments {
+		list-style: none;
+		padding: 1.1rem 1rem;
+
+		li {
+			line-height: 1.5;
+		}
 	}
 }
 

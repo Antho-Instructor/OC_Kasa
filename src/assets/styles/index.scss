@@ -16,6 +16,7 @@ body {
 @import "pages/layout";
 @import "pages/cardslist";
 @import "pages/not_found";
+@import "pages/details";
 
 // Import des composants
 @import "components/navbar";
@@ -23,3 +24,5 @@ body {
 @import "components/card";
 @import "components/footer";
 @import "components/dropdown";
+@import "components/tags";
+@import "components/ratings";

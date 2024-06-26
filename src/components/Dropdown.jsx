@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrowTop from "../assets/images/arrow_top.svg";
 
-function Dropdown({ title, children }) {
+function Dropdown({ title, children, equipments }) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleOpen = () => setIsOpen(!isOpen);
@@ -17,7 +17,17 @@ function Dropdown({ title, children }) {
 					}}
 				></span>
 			</summary>
-			<p>{children}</p>
+			{equipments ? (
+				<ul className="equipments">
+					{equipments.map((equipment, index) => (
+						<li key={index} className="equipment-item">
+							<span>{equipment}</span>
+						</li>
+					))}
+				</ul>
+			) : (
+				<p>{children}</p>
+			)}
 		</details>
 	);
 }
