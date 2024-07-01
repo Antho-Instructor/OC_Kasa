@@ -27,7 +27,7 @@ const router = createBrowserRouter([
 				},
 			},
 			{
-				path: "/:id",
+				path: "/appartment/:id",
 				element: <Details />,
 				loader: async ({ params }) => {
 					const data = datas.find((card) => card.id === params.id);

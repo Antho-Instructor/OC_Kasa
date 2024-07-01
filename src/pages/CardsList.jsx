@@ -8,7 +8,7 @@ function CardsList() {
 		<section className="cards__list">
 			{datas.map((card) => {
 				return (
-					<Link key={card.id} to={`/${card.id}`}>
+					<Link key={card.id} to={`/appartment/${card.id}`}>
 						<Card card={card} />
 					</Link>
 				);

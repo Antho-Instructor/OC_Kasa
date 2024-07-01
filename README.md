@@ -13,11 +13,9 @@
 -   𝕏 - (Twitter): [@Gorski_Anthony](https://twitter.com/Gorski_Anthony)
 -   GitHub: [@GorskiAnthony](https://github.com/GorskiAnthony)
 
-
 ## Affichez votre soutien
 
-Donnez un ⭐️ si ce projet vous a aidé !
----
+## Donnez un ⭐️ si ce projet vous a aidé !
 
 ### 🗃️ Version
 
